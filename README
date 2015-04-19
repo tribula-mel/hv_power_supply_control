@@ -1,0 +1,6 @@
+ALE102 Control Software
+=======================
+
+
+ALE102 is high voltage capacitor power supply made by TDK-Lambda. It can be controlled with relatively simple electronics. I got two used ALE 102 for my Tesla coil project. For quite some time I used very simple breadboard control hardware which was failing from time to time due to my soldering skills, so I decided to go one step further. I was always interested in controlling some device with a computer, so this was perfect opportunity to tackle that problem. For that purpose I acquired PCIDAS1602/16 digital/analog IO card and had to make simple interface board in between IO card and the power supply. Then it was matter of writing supporting code. I did this in the summer of 2014 while on vacation. Code compiles and runs on at least recent Ubuntu powered machine, the details are covered in supporting INSTALL file. Please read for details.
+I tried my best to make the code as generic and extensible as possible. Thus I believe that different combinations of power supplies and IO cards could be relatively easily supported.
