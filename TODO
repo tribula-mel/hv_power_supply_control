@@ -1,0 +1,6 @@
+1) think about how to handle colors of the led and control states - priority medium
+2) color for text/font? - priority low
+3) introduce text file for different settings: -priority high
+   a) font
+   b) colors
+4) there are some immediate values used throughout the code

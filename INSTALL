@@ -1,0 +1,31 @@
+Compilation
+===========
+
+In order to compile this package some dependencies needs to be resolved first:
+
+   1) Allegro libraries are used for graphics (https://www.allegro.cc/)
+   2) Comedi libraries are needed for IO cards support (http://comedi.org/)
+
+Under Ubuntu 14.04 the packages could be installed with following command:
+
+   sudo apt-get install libcomedi0 libcomedi-dev liballegro5.0 liballegro5-dev
+
+To compile the code issue the command:
+
+   make
+
+This will create:
+
+   1) ps_prog - main executable
+   2) pcidas1602_16.so - plugin for the IO card
+
+
+Configuration
+=============
+
+The data directory carries:
+
+   1) power_supply.cfg - configuration file
+   2) Font file DejaVuSans.ttf
+
+Idea behind the configuration file is to provide the means for controlling the UI layout and also to provide a path to where the plugin is located. Thus, the main executable and the plugin could be installed anywhere in the file system (assuming that the user has root privileges) as long as the data directory is installed alongside the executable.
